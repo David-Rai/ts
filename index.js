@@ -24,4 +24,4 @@ var car = {
     rollno: 3,
     isValid: false
 };
-console.log(car);
+// console.log(Size)

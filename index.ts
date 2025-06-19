@@ -30,4 +30,8 @@ rollno:3,
 isValid:false
 }
 
-console.log(car)
+//enum
+
+const enum Size {Small,Medium,Large}
+
+// console.log(Size)
