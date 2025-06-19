@@ -1,5 +1,5 @@
 
-//Variable declaration in ts
+//Simple types in ts
 const rollno:Number=12//for number datatype
 const nam:String = "ram"//for string datatype
 const isValid:Boolean = false//for bool datatype
@@ -8,7 +8,7 @@ const isValid:Boolean = false//for bool datatype
 const names:readonly any[]=["ram","la","c","1",2,3]
 // console.log(names)
 
-//Specials datatypes
+//Specials types
 let value:unknown
 let demo:any = "hey"//for all type of datatype
 let demo2:undefined
@@ -31,7 +31,16 @@ isValid:false
 }
 
 //enum
+enum Size {Small,Medium,Large}
+enum Car{
+    name="toyota",
+    prize="11111",
+    address="pulchowk"
+}
 
-const enum Size {Small,Medium,Large}
-
-// console.log(Size)
+//Type annotation
+let random:number | string | boolean
+// random="ram"
+// console.log(random)
+// random=1111
+// console.log(random)
