@@ -6,4 +6,9 @@ var user = {
     name: "ram",
     age: 12
 };
-console.log(user);
+var user2 = {
+    name: "ram",
+    age: 1,
+    salary: 1111
+};
+console.log(user2);

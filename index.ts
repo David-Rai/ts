@@ -89,10 +89,21 @@ type User={//type for objects
     name:Name,
     age:Age
 }
-
+type Salary={
+    salary:number
+}
 const user:User={
     name:"ram",
     age:12
 }
 
 type Greet=(name:Name) => string//type for function
+
+//intersection types
+type Profile=User & Salary
+const user2:Profile={
+     name:"ram",
+     age:1,
+     salary:1111
+}
+console.log(user2)
