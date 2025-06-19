@@ -46,37 +46,53 @@
 // // console.log(random)
 
 //Interface for user
-interface User {
-    name: String,
-    age: number,
-    isMarried?: boolean
+// interface User {
+//     name: String,
+//     age: number,
+//     isMarried?: boolean
+// }
+
+// const user: User = {
+//     name: "ram",
+//     age: 30,
+// }
+
+// //Interface for function
+// interface Greet{
+//     (name:string) : any
+// }
+// const greet:Greet = (name)=>{
+// return name
+// }
+
+// //Extending interface
+// interface Person{
+//     name:string
+// }
+
+// interface Employee extends Person{
+//     salary:number
+// }
+
+// const emp:Employee={
+//     name:"ram",
+//     salary:22222
+// }
+
+// console.log(emp)
+
+//type Alias
+type Name=string
+type Age=number
+
+type User={//type for objects
+    name:Name,
+    age:Age
 }
 
-const user: User = {
-    name: "ram",
-    age: 30,
-}
-
-//Interface for function
-interface Greet{
-    (name:string) : any
-}
-const greet:Greet = (name)=>{
-return name
-}
-
-//Extending interface
-interface Person{
-    name:string
-}
-
-interface Employee extends Person{
-    salary:number
-}
-
-const emp:Employee={
+const user:User={
     name:"ram",
-    salary:22222
+    age:12
 }
 
-console.log(emp)
+type Greet=(name:Name) => string//type for function

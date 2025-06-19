@@ -4,13 +4,6 @@
 // const isValid:Boolean = false//for bool datatype
 var user = {
     name: "ram",
-    age: 30,
+    age: 12
 };
-var greet = function (name) {
-    return name;
-};
-var emp = {
-    name: "ram",
-    salary: 22222
-};
-console.log(emp);
+console.log(user);
