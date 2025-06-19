@@ -9,3 +9,9 @@
 - Special types (any,unknown,never,null,void)
 - Arrays and objects with readonly 
 - Tuples with readonly
+- Type inference and Type annotation
+- Interfaces,readonly,random memeber,encapsulation
+- enums
+- Literal types and union types "|"
+- Types aliases (type)
+- intersection types (&)
