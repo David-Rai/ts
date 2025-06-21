@@ -31,7 +31,7 @@
 // // }
 
 // // //enum
-// // enum Size {Small,Medium,Large}s
+// // enum Size {Small,Medium,Large}
 // // enum Car{
 // //     name="toyota",
 // //     prize="11111",
@@ -106,4 +106,8 @@
 //      age:1,
 //      salary:1111
 // }
-// console.log(user2)
+// console.log(user2) 
+
+//Literal types
+let statusCode : 200 | 201 | "ram"
+statusCode="ram"
