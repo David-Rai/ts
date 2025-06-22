@@ -4,7 +4,7 @@ const app=express()
 
 app.get("/",(req:Request,res:Response)=>{
 
-    res.json("hey there")
+    res.json({message:"nodemon intregrated"})
 })
 
 
