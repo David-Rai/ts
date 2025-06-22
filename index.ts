@@ -109,5 +109,30 @@
 // console.log(user2) 
 
 //Literal types
-let statusCode : 200 | 201 | "ram"
-statusCode="ram"
+// let statusCode : 200 | 201 | "ram"
+// statusCode="ram"
+
+//*****Default and optional parameter******* */
+interface GreetBlue {
+    (name?: string, age?: number): string
+}
+// function greet:GreetBlue(name,age) {
+
+//     return `your name ${name} and your age is ${age}`
+// }
+
+// const greet: GreetBlue = (name = "name", age = 1) => {
+//     return `your name ${name} and your age is ${age}`
+
+// }
+
+// console.log(greet())
+
+//******Rest parameter****** */
+
+// function get(...args:number[] | string[]):any{
+
+//     return args
+// }
+
+// console.log(1,2,3,4)
