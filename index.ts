@@ -65,7 +65,9 @@
 // // return name
 // // }
 
-// // //Extending interface
+
+
+// // //********************Extending interface**************
 // // interface Person{
 // //     name:string
 // // }
@@ -81,7 +83,7 @@
 
 // // console.log(emp)
 
-// //type Alias
+// //**********Type Alias************
 // type Name=string
 // // type Age=number
 
@@ -99,7 +101,7 @@
 
 // type Greet=(name:Name) => string//type for function
 
-// //intersection types
+// //***************intersection types***********
 // type Profile=User & Salary
 // const user2:Profile={
 //      name:"ram",
@@ -108,14 +110,16 @@
 // }
 // console.log(user2) 
 
-//Literal types
+//*************Literal types***********
 // let statusCode : 200 | 201 | "ram"
 // statusCode="ram"
 
+
+
 //*****Default and optional parameter******* */
-interface GreetBlue {
-    (name?: string, age?: number): string
-}
+// interface GreetBlue {
+//     (name?: string, age?: number): string
+// }
 // function greet:GreetBlue(name,age) {
 
 //     return `your name ${name} and your age is ${age}`
@@ -128,6 +132,8 @@ interface GreetBlue {
 
 // console.log(greet())
 
+
+
 //******Rest parameter****** */
 
 // function get(...args:number[] | string[]):any{
@@ -136,3 +142,17 @@ interface GreetBlue {
 // }
 
 // console.log(1,2,3,4)
+
+//******Index Signature******* */
+interface User{
+    age:number
+    [key:string]:string | number
+}
+
+const user1:User={
+name:"ram",
+age:12,
+dob:12
+}
+
+console.log(user1["name"])
