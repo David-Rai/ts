@@ -144,15 +144,28 @@
 // console.log(1,2,3,4)
 
 //******Index Signature******* */
+// interface User{
+//     age:number
+//     [key:string]:string | number
+// }
+
+// const user1:User={
+// name:"ram",
+// age:12,
+// dob:12
+// }
+
+// console.log(user1["name"])
+
+//************Dynamic keys************* */
 interface User{
-    age:number
-    [key:string]:string | number
+    [key:string]:string;
 }
 
 const user1:User={
-name:"ram",
-age:12,
-dob:12
+    name:"Ram",
+    age:"12"
 }
 
 console.log(user1["name"])
+console.log(user1["age"])

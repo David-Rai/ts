@@ -3,8 +3,8 @@
 // // const nam:String = "ram"//for string datatype
 // // const isValid:Boolean = false//for bool datatype
 var user1 = {
-    name: "ram",
-    age: 12,
-    dob: 12
+    name: "Ram",
+    age: "12"
 };
 console.log(user1["name"]);
+console.log(user1["age"]);
