@@ -158,14 +158,39 @@
 // console.log(user1["name"])
 
 //************Dynamic keys************* */
-interface User{
-    [key:string]:string;
-}
+// interface User{
+//     [key:string]:string
+// }
+// interface Spec extends User{
+//     age:number
+//     name:string
+// }
 
-const user1:User={
-    name:"Ram",
-    age:"12"
-}
+// type User = {
+//     [key: string]: string
+// }
+// type Spec = {
+//     age: number,
+//     name: string
+// }
 
-console.log(user1["name"])
-console.log(user1["age"])
+// const user1: Spec | User = {
+//     name: "Ram",
+//     age: 12,
+//     country: "Nepal",
+//     dob:"12",        // ✅ string
+//     hobby: "Gaming"          // ✅ string
+
+// }
+
+// console.log(user1)
+
+
+// //*********Unknown******* */
+// let val:unknown
+// val=2
+// val="ram"
+
+// if(typeof val=== "string"){
+// console.log(val.toUpperCase())
+// }

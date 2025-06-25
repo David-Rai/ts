@@ -1,4 +1,7 @@
 {
+  "scripts":{
+    "dev":"tsc generics.ts && node generics.js "
+  },
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.3",
