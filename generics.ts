@@ -52,3 +52,27 @@
 // }
 
 // logger("ram", 12)
+
+//Problem sloving from harkirat
+// type arr=number[] | string []
+
+// interface Arr {
+//     (arr: number[] | string[]): void
+// }
+
+// type Arr=(arr:number [] | string[]) => void
+
+//*******Generics constraints****** */
+// interface hasThis{
+// }
+// const logger = <T extends {name:string} & {age:number}>(obj: T) : void => {
+
+//     console.log(obj.name.toUpperCase())
+//     console.log(obj.age)
+// }
+
+// const user={
+//     name:"ram",
+//     age:12
+// }
+// const result=logger(user)

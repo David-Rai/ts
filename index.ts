@@ -194,3 +194,12 @@
 // if(typeof val=== "string"){
 // console.log(val.toUpperCase())
 // }
+
+import type { Add } from './utils/add'
+
+const add: Add = (a, b) => {
+    console.log(a + b)
+    return a + b
+}
+
+add(1,3)
