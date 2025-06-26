@@ -1,7 +1,7 @@
-import React,{FC} from 'react'
 import { useState, useRef } from 'react'
+import Todo from './Todo'
 
-const App = () :FC => {
+const App = () => {
   const inputRef = useRef<HTMLInputElement | null>(null)
   const [todos, setTodos] = useState<string []>([])
 
@@ -11,7 +11,7 @@ const App = () :FC => {
       const todo: string = inputRef.current.value;
 
       if(todo.trim() === "") return
-
+            
       setTodos([...todos, todo]);
       inputRef.current.value=""
     }
@@ -42,7 +42,9 @@ const App = () :FC => {
 
               todos.map((t:string, i:number) => {
                 return (
-                  <li key={i}>{t}</li>
+                  <>
+                  <Todo key={i} text={t} />
+                  </>
                 )
               })
 
