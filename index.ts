@@ -195,11 +195,17 @@
 // console.log(val.toUpperCase())
 // }
 
-import type { Add } from './utils/add'
+// import type { Add } from './utils/add'
 
-const add: Add = (a, b) => {
-    console.log(a + b)
-    return a + b
-}
+// const add: Add = (a, b) => {
+//     console.log(a + b)
+//     return a + b
+// }
 
-add(1,3)
+// add(1,3)
+
+// import type {User} from './types/user'
+// const user:User={
+//     name:"ram",
+//     age:12
+// }
