@@ -142,10 +142,10 @@
 //     hobby: "Gaming"          // ✅ string
 // }
 // console.log(user1)
-//*********Unknown******* */
-var val;
-val = 2;
-val = "ram";
-if (typeof val === "string") {
-    console.log(val.toUpperCase());
-}
+// //*********Unknown******* */
+// let val:unknown
+// val=2
+// val="ram"
+// if(typeof val=== "string"){
+// console.log(val.toUpperCase())
+// }

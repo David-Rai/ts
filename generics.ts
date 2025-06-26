@@ -43,12 +43,12 @@
 
 // console.log(user)
 
-interface logger<N,A> {
-    (nam: N, age: A): void
-}
+// interface logger<N=string,A=number> {
+//     (nam: N, age: A): void
+// }
 
-const logger: logger<string,number> = function (nam, age) {
-    console.log(`your name is ${nam} and your age is ${age}`)
-}
+// const logger: logger = function (nam, age) {
+//     console.log(`your name is ${nam} and your age is ${age}`)
+// }
 
-logger("ram", 12)
+// logger("ram", 12)
