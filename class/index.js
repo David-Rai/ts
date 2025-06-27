@@ -1,26 +1,25 @@
+//Getter and Setters
 
-//blueprint for the objects
-class  DOB{
-    constructor(date){
-        this.date=date
+class Box {
+    constructor(h, w) {
+        this._h = h
+        this._w = w
     }
-    showDate(){
-        console.log(`DOB is ${this.date}`)
+
+    //setter for the height
+    set h(newHeight) {
+        if (newHeight > 0) {
+            return this._h = newHeight
+        } else {
+            console.error("Height must need to be a number")
+        }
+    }
+
+    get h(){
+        return this._h
     }
 }
-class User extends DOB{
-    constructor (date,name,age){
-        super(date)
-        this.name=name
-        this.age=age
-    }
 
-    logger(){
-        console.log(`your name is ${this.name} and age is ${this.age}`)
-    }
-}
-
-//Instance of class as objects
-const user1=new User(12,"ram",12)
-user1.showDate()
-user1.logger()
+const box1 = new Box(1, 2)
+console.log(box1.h)
+console.log(box1.w)
