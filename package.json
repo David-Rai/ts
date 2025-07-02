@@ -1,6 +1,6 @@
 {
   "scripts":{
-    "dev":"tsc ./class/class.ts && node ./class/class.js "
+    "dev":"cls && tsc ./class/class.ts && node ./class/class.js "
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
