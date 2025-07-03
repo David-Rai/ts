@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "node server.js",
+    "start": "node ./dist/server.js",
     "watch": "tsc -w",
-    "dev": "concurrently \"tsc -w\" \"nodemon server.js\""
+    "dev": "concurrently \"tsc -w\" \"nodemon ./dist/server.js\""
   },
   "keywords": [],
   "author": "",

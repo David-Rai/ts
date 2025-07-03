@@ -1,6 +1,12 @@
 import express, { Request, Response } from "express";
+import { router } from "./routers/user.routes.js";
 const app = express();
 const port = 1111;
+
+//Middlewares
+app.use(express.json())
+app.use(express.urlencoded({extended:false}))
+app.use(router)
 
 app.get("/", (req: Request, res: Response) => {
 	res.json({message:"heyj there",status:200});
