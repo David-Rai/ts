@@ -1,13 +1,13 @@
-import express,{Request,Response} from "express"
+import express ,{Request,Response} from "express";
+const app = express();
+const port = 1111;
 
-const app=express()
-
-app.get("/",(req:Request,res:Response)=>{
-
-    res.json({message:"nodemon intregrated"})
-})
+app.get("/", (req:Request, res:Response) => {
+  res.send("Hello World!");
+  console.log("Response sent");
+});
 
 
-app.listen(1111,()=>{
-    console.log("server is running")
-})
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
