@@ -6,7 +6,6 @@
 
 // // //Arrays
 // // const names:readonly any[]=["ram","la","c","1",2,3]
-// // // console.log(names)
 
 // // //Specials types
 // // let value:unknown
@@ -15,7 +14,6 @@
 // // let demo3:null
 // // let demo4:never
 // // let func1=(message:String):void =>{
-// // console.log(message)
 // // }
 
 // // //Tuple - a array of predefined length and type of element in a array
@@ -41,9 +39,7 @@
 // // //Type annotation
 // // let random:number | string | boolean
 // // // random="ram"
-// // // console.log(random)
 // // // random=1111
-// // // console.log(random)
 
 // //Interface for user
 // // interface User {
@@ -81,7 +77,6 @@
 // //     salary:22222
 // // }
 
-// // console.log(emp)
 
 // //**********Type Alias************
 // type Name=string
@@ -108,7 +103,6 @@
 //      age:1,
 //      salary:1111
 // }
-// console.log(user2) 
 
 //*************Literal types***********
 // let statusCode : 200 | 201 | "ram"
@@ -130,7 +124,6 @@
 
 // }
 
-// console.log(greet())
 
 
 
@@ -141,7 +134,6 @@
 //     return args
 // }
 
-// console.log(1,2,3,4)
 
 //******Index Signature******* */
 // interface User{
@@ -155,7 +147,6 @@
 // dob:12
 // }
 
-// console.log(user1["name"])
 
 //************Dynamic keys************* */
 // interface User{
@@ -183,7 +174,6 @@
 
 // }
 
-// console.log(user1)
 
 
 // //*********Unknown******* */
@@ -192,13 +182,11 @@
 // val="ram"
 
 // if(typeof val=== "string"){
-// console.log(val.toUpperCase())
 // }
 
 // import type { Add } from './utils/add'
 
 // const add: Add = (a, b) => {
-//     console.log(a + b)
 //     return a + b
 // }
 
@@ -218,10 +206,5 @@ type car = {
     price: number
 }
 
-const ram={
-    name:"hari",
-    age:12
-}
-
-const demo = typeof ram
-console.log(demo)
+type nType=car["name"]
+type bType=car["brand"]
