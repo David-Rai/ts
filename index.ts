@@ -209,3 +209,19 @@
 //     name:"ram",
 //     age:12
 // }
+
+
+//****** Typeof********* */
+type car = {
+    name: string,
+    brand: string,
+    price: number
+}
+
+const ram={
+    name:"hari",
+    age:12
+}
+
+const demo = typeof ram
+console.log(demo)
