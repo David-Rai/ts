@@ -1,18 +1,12 @@
-import express, { Request, Response } from "express";
-import { router } from "./routers/user.routes.js";
-const app = express();
-const port = 1111;
 
-//Middlewares
-app.use(express.json())
-app.use(express.urlencoded({extended:false}))
-app.use(router)
-
-app.get("/", (req: Request, res: Response) => {
-	res.json({message:"heyj there",status:200});
-});
+import express from 'express'
 
 
-app.listen(port, () => {
-	console.log(`Example app listening on port ${port}`);
-});
+const app=express()
+
+app.get("/",(req,res)=>{
+
+    res.json({message:"using ts with the ndoe js and express js"})
+})
+
+app.listen(1111,()=> console.log("server is running on the port 1111"))

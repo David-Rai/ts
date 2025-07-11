@@ -200,11 +200,38 @@
 
 
 //****** Typeof********* */
-type car = {
-    name: string,
-    brand: string,
-    price: number
+// type car = {
+//     name: string,
+//     brand: string,
+//     price: number
+// }
+
+// type nType=car["name"]
+// type bType=car["brand"]
+
+//****Conditionals types***** */
+
+// type gType <T>=T extends string ? string : number
+
+// type A=gType<string>
+
+//******Templete literals****** */
+
+// type statusCode=200 | 201 | 400 | 500
+
+// type temp=`hello-${statusCode}`
+// let demo:temp="hello-200"
+// console.log(demo)
+
+//**Mapped types**** */
+interface car{
+    name:string
+    brand:string
+    price:number
 }
 
-type nType=car["name"]
-type bType=car["brand"]
+type Gen<C>={
+[k in keyof C]:C[k]
+}
+
+type newCar=Gen<car>

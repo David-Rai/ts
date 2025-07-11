@@ -6,7 +6,7 @@ const App = () => {
   const inputRef = useRef<HTMLInputElement | null>(null)
   const listRef = useRef<HTMLInputElement | null>(null)
   const [avatar, setAvatar] = useState<string>("")
-  const [repos, setRepos] = useState<any[]>([])
+  const [repos, setRepos] = useState<any []>([])
 
 
   //Getting random cat image at reload
@@ -20,7 +20,7 @@ const App = () => {
     setAvatar(result.data[0].url)
     console.log(result)
 
-    const checked = listRef.current?.checked
+    const checked = listRef.current?.checked as boolean
     if (checked) {
       const res = await axios.get(`https://api.thecatapi.com/v1/images/search?limit=10`)
       setRepos(res.data)
