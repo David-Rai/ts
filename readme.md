@@ -31,3 +31,22 @@ To work with TypeScript in an Express app, install the following development dep
 
 ```bash
 npm install -D typescript ts-node nodemon @types/node @types/express
+```
+
+## 🚀 Using TypeScript with React.js
+To use react.js with typescript install this first
+
+```bash
+npm create vite@latest app-name -- --template react-ts
+cd app-name
+npm run dev
+```
+visit `localhost:5173`
+
+# Implementations of Typscript
+- useState<types >()
+- useRef<>()
+- Events like `React.changeEvent`
+- Props 
+- Context API with the ts
+
